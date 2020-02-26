@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="SETUP EMAIL ACCOUNT">
+
+        <EditTextPreference
+            android:dialogTitle="Your email"
+            android:dialogMessage="Enter your email"
+            android:inputType="textEmailAddress"
+            android:key="key_email"
+            android:title="Email"
+            android:summary="ascorbicros@gmail.com">
+
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:dialogTitle="Your password"
+            android:dialogMessage="Enter your password"
+            android:inputType="textPassword"
+            android:key="key_password"
+            android:title="Password">
+        </EditTextPreference>
+
+        <ListPreference
+            android:key="key_email_providers"
+            android:title="Email Provider"
+            android:summary="Select your email provider"
+            android:entries="@array/emailProvider"
+            android:entryValues="@array/emailProviderValues">
+
+        </ListPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ABOUT">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+
+<!--        <Preference-->
+<!--            android:key="key_send_feedback"-->
+<!--            android:summary="@string/summary_support"-->
+<!--            android:title="@string/title_send_feedback" />-->
+
+<!--        &lt;!&ndash; preference opens url in browser &ndash;&gt;-->
+<!--        <Preference-->
+<!--            android:summary="@string/summary_faq"-->
+<!--            android:title="@string/title_faq">-->
+<!--            <intent-->
+<!--                android:action="android.intent.action.VIEW"-->
+<!--                android:data="@string/url_faq" />-->
+<!--        </Preference>-->
+
+<!--        <Preference android:title="@string/privacy_policy">-->
+<!--            <intent-->
+<!--                android:action="android.intent.action.VIEW"-->
+<!--                android:data="@string/url_privacy" />-->
+<!--        </Preference>-->
+
+<!--        <Preference android:title="@string/title_terms">-->
+<!--            <intent-->
+<!--                android:action="android.intent.action.VIEW"-->
+<!--                android:data="@string/url_terms" />-->
+<!--        </Preference>-->
+
+        <PreferenceScreen
+            android:title="Help"
+            android:summary="FAQ, Feedback, Privacy Policy">
+
+            <intent
+                android:targetPackage="com.wedidsystem.goapp"
+                android:targetClass="com.wedidsystem.goapp.SettingHeadersActivity">
+
+            </intent>
+
+        </PreferenceScreen>
+
+        <Preference
+            android:title="@string/title_send_feedback"
+            android:summary="@string/summary_support"
+            android:key="key_send_feedback">
+
+
+        </Preference>
+
+        <Preference
+            android:title="Invite a friend"
+            android:key="key_invite">
+
+            <intent
+                android:action="android.intent.action.SEND"
+                android:mimeType="text/plain"
+                android:data="Share app with friends">
+            </intent>
+
+        </Preference>
+
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory-->
+<!--        android:title="PLAYER">-->
+
+<!--        <CheckBoxPreference-->
+<!--            android:defaultValue="true"-->
+<!--            android:key="enable_timer"-->
+<!--            android:title="Enamble sleep timer">-->
+
+<!--        </CheckBoxPreference>-->
+
+
+
+<!--        <ListPreference-->
+<!--            android:key="key_music_quality"-->
+<!--            android:title="Music Quality"-->
+<!--            android:entries="@array/musicQuality"-->
+<!--            android:entryValues="@array/musicQualityValues">-->
+
+<!--        </ListPreference>-->
+
+<!--        <MultiSelectListPreference-->
+<!--            android:dialogTitle="Select all your options"-->
+<!--            android:key="music_type"-->
+<!--            android:title="Types of music"-->
+<!--            android:summary="Press to show list"-->
+<!--            android:entries="@array/typesOfMusic"-->
+<!--            android:entryValues="@array/typesOfMusicValues">-->
+
+<!--        </MultiSelectListPreference>-->
+
+<!--    </PreferenceCategory>-->
+
+
+<!--    <PreferenceCategory-->
+<!--        android:title="OTHER">-->
+
+<!--        <SwitchPreference-->
+<!--            android:key="enable_notification"-->
+<!--            android:editable="true"-->
+<!--            android:title="Push notifications">-->
+
+<!--        </SwitchPreference>-->
+
+<!--        -->
+
+<!--    </PreferenceCategory>-->
+
+</PreferenceScreen>

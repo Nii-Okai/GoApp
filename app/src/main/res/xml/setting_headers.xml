@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:title="@string/title_faq"
+        android:icon="@drawable/sync"
+        android:fragment="com.wedidsystem.goapp.Activities.SettingHeadersActivity$SettingHeadersFragment"
+        android:summary="@string/summary_faq">
+
+        <extra
+            android:name="header"
+            android:value="pref_faq"/>
+
+    </header>
+
+    <header
+        android:title="@string/privacy_policy"
+        android:icon="@drawable/messages"
+        android:fragment="com.wedidsystem.goapp.Activities.SettingHeadersActivity$SettingHeadersFragment">
+
+        <extra
+            android:name="header"
+            android:value="pref_privacy_policy"/>
+
+    </header>
+
+    <header
+        android:title="@string/title_terms"
+        android:icon="@drawable/sync"
+        android:fragment="com.wedidsystem.goapp.Activities.SettingHeadersActivity$SettingHeadersFragment">
+
+        <extra
+            android:name="header"
+            android:value="pref_terms"/>
+
+    </header>
+
+
+</preference-headers>

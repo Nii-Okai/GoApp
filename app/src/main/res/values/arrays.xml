@@ -1,0 +1,36 @@
+<resources>
+
+    <string-array name="emailProvider">
+        <item>Gmail</item>
+        <item>Yahoo</item>
+        <item>iCloud</item>
+        <item>AOL</item>
+        <item>MSN</item>
+        <item>Office 365</item>
+        <item>Outlook.com</item>
+        <item>Hotmail.com</item>
+        <item>Live.com</item>
+    </string-array>
+
+    <string-array name="emailProviderValues">
+        <item>imap.gmail.com</item>
+        <item>imap.mail.yahoo.com</item>
+        <item>imap.mail.me.com</item>
+        <item>imap.aol.com</item>
+        <item>imap-mail.outlook.com</item>
+        <item>outlook.office365.com</item>
+        <item>outlook.office365.com</item>
+        <item>outlook.office365.com</item>
+        <item>outlook.office365.com</item>
+    </string-array>
+
+    <string-array name="validityValues">
+        <item>Select validity period</item>
+        <item>1 day</item>
+        <item>3 days</item>
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>1 month</item>
+    </string-array>
+
+</resources>
